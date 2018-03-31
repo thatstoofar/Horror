@@ -5,18 +5,15 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 	private Animator anim; 
 	public float speed;
-	private GameObject target; 
+	public float turnSpeed;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
 		Screen.SetResolution ((int)Screen.width, (int)Screen.height, true);
-		target = GameObject.Find ("Player");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-		this.transform.position = target.transform.position;
 		if( Input.acceleration.y > -0.20f ){
 			anim.SetBool ("walking", true);
 			transform.Translate ( 0, 0, 1*speed*Time.deltaTime);
@@ -26,5 +23,19 @@ public class PlayerController : MonoBehaviour {
 			print("Stop");
 
 		}
+		if( Input.acceleration.x > 0.35f ){
+			transform.Rotate (Vector3.up, turnSpeed * Time.deltaTime);
+			print("Rotate Right");
+
+		}
+		if( Input.acceleration.x < -0.35f ){
+			transform.Rotate (Vector3.down, turnSpeed * Time.deltaTime);
+			print("Rotate Left");
+
+		}
+
+
+
+
 	}
 }
