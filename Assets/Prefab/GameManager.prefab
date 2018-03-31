@@ -51,4 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e0faf67b9a9ef498a861e3e76dae4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 1988944675272782, guid: 3a54981c355fafd4f9b090231bec59b7, type: 2}
   redlight: 0
+  radius: 50
+  enemySpeed: 20
