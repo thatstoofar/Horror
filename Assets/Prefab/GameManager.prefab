@@ -51,7 +51,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e0faf67b9a9ef498a861e3e76dae4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pC: {fileID: 114198344787965908, guid: fecb48e475971c34e9a80573eef3950f, type: 2}
+  eC: {fileID: 114905529164466690, guid: 3a54981c355fafd4f9b090231bec59b7, type: 2}
+  jS: {fileID: 1132551583158488, guid: 3aaa60a9fbec2b04992aeab47ae86c53, type: 2}
   enemy: {fileID: 1988944675272782, guid: 3a54981c355fafd4f9b090231bec59b7, type: 2}
-  redlight: 0
+  playerMoving: 1
   radius: 50
+  deathDistance: 1
   enemySpeed: 20
+  hearingDistance: 10
+  enemySpawnDuration: 300
+  distance: -1
+  enemySpawnPosition: {x: 0, y: 0, z: 0}
