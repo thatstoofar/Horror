@@ -36,7 +36,8 @@ public class LightningManager : MonoBehaviour {
 	}
 
 	void activate() {
-		currentLightning = Instantiate (lightning, new Vector3(0, 45, 0), new Quaternion());
+		currentLightning = Instantiate (lightning, new Vector3(0, 45, 0), Quaternion.Euler(new Vector3(90,0,0)));
+		currentLightning.Play ();
 		currentFlash = (GameObject)Instantiate (flashCanvas); 
 	}
 
