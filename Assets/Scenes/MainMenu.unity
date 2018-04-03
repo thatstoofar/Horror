@@ -18527,6 +18527,7 @@ GameObject:
   - component: {fileID: 1283986250}
   - component: {fileID: 1283986252}
   - component: {fileID: 1283986251}
+  - component: {fileID: 1283986253}
   m_Layer: 5
   m_Name: Tap Screen To Start
   m_TagString: Untagged
@@ -18591,6 +18592,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1283986249}
+--- !u!95 &1283986253
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1283986249}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7c57deb94640704a9a716f411c11805, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1286378049
 Prefab:
   m_ObjectHideFlags: 0

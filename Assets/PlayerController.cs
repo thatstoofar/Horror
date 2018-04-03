@@ -11,6 +11,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+	public SoundManager sm;
 	public GameManager gm;
 	private Animator anim;
 	public float speed =1f;
@@ -27,7 +28,8 @@ public class PlayerController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		//walk forward accelermeter
+		//Touch input movement
+		//walk forward
 		if (Input.touchCount > 0) {
 			gm.playerMoving = true;
 			anim.SetBool ("walking", true);
@@ -39,8 +41,8 @@ public class PlayerController : MonoBehaviour
 			anim.SetBool ("walking", false);
 		}
 
-		/*
-		// walk forward accelermeter
+		/*For accelerometer movement
+		// walk forward 
 		if (Input.acceleration.y > -0.20f) {
 			gm.playerMoving = true;
 			anim.SetBool ("walking", true);
@@ -51,6 +53,7 @@ public class PlayerController : MonoBehaviour
 			gm.playerMoving = false;
 			anim.SetBool ("walking", false);
 		} */
+
 		// turn right 
 		if (Input.acceleration.x > 0.35f) {
 			//gm.playerMoving = true;
@@ -61,8 +64,6 @@ public class PlayerController : MonoBehaviour
 		if (Input.acceleration.x < -0.35f) {
 			//gm.playerMoving = true;
 			transform.Rotate (Vector3.down, turnSpeed * Time.deltaTime);
-			;
-
 		}
 
 

@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\EnemyController.cs" />
      <Compile Include="Assets\GameManager.cs" />
+     <Compile Include="Assets\GameOverController.cs" />
      <Compile Include="Assets\Imports\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
      <Compile Include="Assets\Imports\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
      <Compile Include="Assets\Imports\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
@@ -93,6 +94,7 @@
      <Compile Include="Assets\Imports\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
      <Compile Include="Assets\MainMenuController.cs" />
      <Compile Include="Assets\PlayerController.cs" />
+     <Compile Include="Assets\SoundManager.cs" />
      <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
      <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
      <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />
